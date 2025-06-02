@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alphabetical Chart</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .keyboard {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+    .key {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 15px 20px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: default;
+    }
+    @media (max-width:900px){
+    .keyboard {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+    }
+    .key {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: default;
+    }
+    .key:hover{
+        
+        font-size: 8px;
+    }
+       
+    }
+    .key:hover{
+        background-color: green;
+        color: white;
+        cursor:pointer;
+        font-size:20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="keyboard">
+    <h1 align="center">Alphabetical Chart</h1>
+    <div class="row">
+      <div class="key" onclick="func17()">Q</div>
+      <div class="key" onclick="func23()">W</div>
+      <div class="key" onclick="func5()">E</div>
+      <div class="key" onclick="func18()">R</div>
+      <div class="key" onclick="func20()">T</div>
+      <div class="key" onclick="func25()">Y</div>
+      <div class="key" onclick="func21()">U</div>
+      <div class="key" onclick="func9()">I</div>
+      <div class="key" onclick="func15()">O</div>
+      <div class="key" onclick="func16()">P</div>
+    </div>
+    <div class="row">
+      <div class="key" onclick="func1()">A</div>
+      <div class="key" onclick="func19()">S</div>
+      <div class="key" onclick="func4()">D</div>
+      <div class="key" onclick="func6()">F</div>
+      <div class="key" onclick="func7()">G</div>
+      <div class="key" onclick="func8()">H</div>
+      <div class="key" onclick="func10()">J</div>
+      <div class="key" onclick="func11()">K</div>
+      <div class="key" onclick="func12()">L</div>
+    </div>
+    <div class="row">
+      <div class="key" onclick="func26()">Z</div>
+      <div class="key" onclick="func24()">X</div>
+      <div class="key" onclick="func3()">C</div>
+      <div class="key" onclick="func22()">V</div>
+      <div class="key" onclick="func2()">B</div>
+      <div class="key" onclick="func14()">N</div>
+      <div class="key" onclick="func13()">M</div>
+    </div>
+  </div>
+  <script>
+      function func1(){
+        window.alert("A for Apple"); 
+      }
+      function func2(){
+        window.alert("B for Ball"); 
+      }
+      function func3(){
+        window.alert("C for Cat"); 
+      }
+      function func4(){
+        window.alert("D for Dog"); 
+      }
+      function func5(){
+        window.alert("E for Elephant"); 
+      }
+      function func6(){
+        window.alert("F for Fish"); 
+      }
+      function func7(){
+        window.alert("G for Girl"); 
+      }
+      function func8(){
+        window.alert("H for House"); 
+      }
+      function func9(){
+        window.alert("I for Ice cream"); 
+      }
+      function func10(){
+        window.alert("J for Jug"); 
+      }
+      function func11(){
+        window.alert("K for King"); 
+      }
+      function func12(){
+        window.alert("L for Lion"); 
+      }
+      function func13(){
+        window.alert("M for Monkey"); 
+      }
+      function func14(){
+        window.alert("N for Nest"); 
+      }
+      function func15(){
+        window.alert("O for Orange"); 
+      }
+      function func16(){
+        window.alert("P for Parrot"); 
+      }
+      function func17(){
+        window.alert("Q for Queen"); 
+      }
+      function func18(){
+        window.alert("R for Rabbit"); 
+      }
+      function func19(){
+        window.alert("S for Sun"); 
+      }
+      function func20(){
+        window.alert("T for Tiger"); 
+      }
+      function func21(){
+        window.alert("U for Umbrella"); 
+      }
+      function func22(){
+        window.alert("V for Van"); 
+      }
+      function func23(){
+        window.alert("W for Whale"); 
+      }
+      function func24(){
+        window.alert("X for Xerox"); 
+      }
+      function func25(){
+        window.alert("Y for Yak"); 
+      }
+      function func26(){
+        window.alert("Z for Zebra"); 
+      }
+
+
+
+      document.onkeydown=function(a){
+            if(a.keyCode==65){
+                alert("A for Apple");
+            }else if(a.keyCode==66){
+                alert("B for Ball");
+            }else if(a.keyCode==67){
+                alert("C for Cat");
+            }else if(a.keyCode==68){
+                alert("D for Dog");
+            }else if(a.keyCode==69){
+                alert("E for Elephant");
+            }else if(a.keyCode==70){
+                alert("F for Fish");
+            }else if(a.keyCode==71){
+                alert("G for Girl");
+            }else if(a.keyCode==72){
+                alert("H for House");
+            }else if(a.keyCode==73){
+                alert("I for Ice-cream");
+            }else if(a.keyCode==74){
+                alert("J for Jug");
+            }else if(a.keyCode==75){
+                alert("K for King");
+            }else if(a.keyCode==76){
+                alert("L for Lion");
+            }else if(a.keyCode==77){
+                alert("M for Monkey");
+            }else if(a.keyCode==78){
+                alert("N for Nest");
+            }else if(a.keyCode==79){
+                alert("O for Orange");
+            }else if(a.keyCode==80){
+                alert("P for Parrot");
+            }else if(a.keyCode==81){
+                alert("Q for Queen");
+            }else if(a.keyCode==82){
+                alert("R for Rabbit");
+            }else if(a.keyCode==83){
+                alert("S for Sun");
+            }else if(a.keyCode==84){
+                alert("T for Tiger");
+            }else if(a.keyCode==85){
+                alert("U for Umbrella");
+            }else if(a.keyCode==86){
+                alert("V for Van");
+            }else if(a.keyCode==87){
+                alert("W for Whale");
+            }else if(a.keyCode==88){
+                alert("X for Xerox");
+            }else if(a.keyCode==89){
+                alert("Y for Yak");
+            }else if(a.keyCode==90){
+                alert("Z for Zebra");
+            }else{
+                alert("Please click only on alphabetical letters!");
+            }
+        }
+     
+  </script>
+</body>
+</html>
